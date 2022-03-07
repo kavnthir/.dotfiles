@@ -7,24 +7,14 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
 
-if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
-fi
-
-if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
-fi
-
-if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
-fi
-
-if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
-fi
+[ -f $sysresources ] && xrdb -merge $sysresources
+[ -f $sysmodmap ] && xmodmap $sysmodmap
+[ -f "$userresources" ] && xrdb -merge "$userresources"
+[ -f "$usermodmap" ] && xmodmap "$usermodmap"
 
 export PATH="${PATH}:${HOME}/.local/bin/"
-xwallpaper --center ~/Photos/Backgrounds/shinigami.jpg &
+export EDITOR=nvim
+xwallpaper --zoom ~/Photos/Backgrounds/shinigami.jpg &
 xbindkeys &
 slstatus &
 exec dwm
