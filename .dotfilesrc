@@ -1,0 +1,10 @@
+[dotfiles]
+repository = /home/kavnthir/.dotfiles
+ignore = [
+	'.git',
+	'.gitignore',
+	'*.swp']
+prefix = .
+externals = {
+	'.bzr.log':	'/dev/null',
+	'.uml':		'/tmp'}

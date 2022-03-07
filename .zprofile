@@ -1,0 +1,2 @@
+[ -f ~/.xinitrc ] && startx
+
