@@ -15,6 +15,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR=nvim
 
+xmousepasteblock &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 xwallpaper --zoom ~/Photos/Backgrounds/shinigami.jpg &
 xbindkeys &

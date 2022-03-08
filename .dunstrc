@@ -142,7 +142,7 @@
     min_icon_size = 0
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 96
+    max_icon_size = 32
 
     # Paths to default icons.
     icon_path = /usr/share/icons/Papirus-Dark/96x96/actions/:/usr/share/icons/Papirus-Dark/96x96/apps/:/usr/share/icons/Papirus-Dark/96x96/devices/:/usr/share/icons/Papirus-Dark/96x96/emblems/:/usr/share/icons/Papirus-Dark/96x96/emotes/:/usr/share/icons/Papirus-Dark/96x96/mimetypes/:/usr/share/icons/Papirus-Dark/96x96/places/:/usr/share/icons/Papirus-Dark/96x96/status/
@@ -242,7 +242,7 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#222222"
-    foreground = "#d8dee9"
+    #foreground = "#d8dee9"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
