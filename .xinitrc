@@ -22,4 +22,4 @@ xbindkeys &
 slstatus &
 dunst &
 
-exec dwm >> ~/Logs/dwm/$(date +%Y-%m-%d_%H.dwm.log) 2>&1
+exec dwm 
