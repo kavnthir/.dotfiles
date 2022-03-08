@@ -15,11 +15,10 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR=nvim
 
-alias sudo='sudo '
-alias vi='nvim'
-alias vim='nvim'
-
+xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
 xwallpaper --zoom ~/Photos/Backgrounds/shinigami.jpg &
 xbindkeys &
 slstatus &
+dunst &
+
 exec dwm >> ~/Logs/dwm/$(date +%Y-%m-%d_%H.dwm.log) 2>&1
