@@ -1,2 +1,2 @@
-[ -f ~/.xinitrc ] && startx
+[ -f ~/.xinitrc ] && exec startx
 

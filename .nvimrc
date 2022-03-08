@@ -2,7 +2,7 @@
 " Load plugins
 "------------------
 
-call plug#begin('~/local/share/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
     Plug 'neoclide/coc.nvim',
 	Plug 'tpope/vim-endwise'
