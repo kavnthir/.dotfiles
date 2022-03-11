@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -15,9 +16,10 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR=nvim
 
+xwallpaper --stretch ~/Photos/Backgrounds/pit.png & # removes lag frames ???
+xwallpaper --stretch ~/Photos/Backgrounds/$(ls ~/Photos/Backgrounds/ | sort -R | tail -1) &
 xmousepasteblock &
-xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
-xwallpaper --zoom ~/Photos/Backgrounds/shinigami.jpg &
+xcompmgr &
 xbindkeys &
 slstatus &
 dunst &
