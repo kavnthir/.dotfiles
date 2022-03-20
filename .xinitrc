@@ -16,8 +16,8 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR=nvim
 
-xwallpaper --stretch ~/Photos/Backgrounds/pit.png & # removes lag frames ???
-xwallpaper --stretch ~/Photos/Backgrounds/$(ls ~/Photos/Backgrounds/ | sort -R | tail -1) &
+#xwallpaper --stretch ~/Photos/Backgrounds/$(ls ~/Photos/Backgrounds/ | sort -R | tail -1) &
+xwallpaper --stretch ~/Photos/Backgrounds/pit.png &
 xmousepasteblock &
 xcompmgr &
 xbindkeys &

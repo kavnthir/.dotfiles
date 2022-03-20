@@ -8,6 +8,8 @@ alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
 alias lux='brightnessctl set'
+
+alias ls='ls --color=auto'
 # History in cache directory:
 HISTSIZE=10000000
 SAVEHIST=10000000

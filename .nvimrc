@@ -7,6 +7,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'neoclide/coc.nvim',
 	Plug 'tpope/vim-endwise'
 	Plug 'rstacruz/vim-closer'
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -60,5 +62,12 @@ autocmd BufRead,BufNewFile *.tpp setlocal filetype=cpp
 autocmd BufRead,BufNewFile *.txx setlocal filetype=cpp
 "autocmd BufNew,BufEnter *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.hxx,*.tpp,*.txx,*.S,*.s,*.asm
 "autocmd BufLeave        *.c,*.C,*.cpp,*.cxx,*.h,*.hpp,*.hxx,*.tpp,*.txx,*.S,*.s,*.asm
+
+
+"---------------------
+" Airline
+"--------------------- 
+
+let g:airline#extensions#tabline#enabled = 1
 
 source ~/.dotfiles/.cocrc
