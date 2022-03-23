@@ -4,12 +4,15 @@ setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 
+alias gn='lux 0 && sleep 30000 && lux 1 && reboot'
 alias sudo='sudo '
 alias vi='nvim'
 alias vim='nvim'
 alias lux='brightnessctl set'
+alias rm='mv -t ~/Trash/'
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 # History in cache directory:
 HISTSIZE=10000000
 SAVEHIST=10000000

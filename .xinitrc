@@ -22,6 +22,7 @@ xmousepasteblock &
 xcompmgr &
 xbindkeys &
 slstatus &
+mullvad-vpn & 
 dunst &
 
 exec dwm 

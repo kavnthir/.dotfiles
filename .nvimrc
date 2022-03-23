@@ -4,7 +4,7 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-    Plug 'neoclide/coc.nvim',
+    Plug 'neoclide/coc.nvim'
 	Plug 'tpope/vim-endwise'
 	Plug 'rstacruz/vim-closer'
 	Plug 'vim-airline/vim-airline'
