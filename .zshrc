@@ -13,6 +13,7 @@ alias rm='mv -t ~/Trash/'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias ip='ip --color=auto'
 # History in cache directory:
 HISTSIZE=10000000
 SAVEHIST=10000000

@@ -9,6 +9,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'rstacruz/vim-closer'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'github/copilot.vim'
 
 call plug#end()
 
