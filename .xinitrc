@@ -15,6 +15,8 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 export PATH="${PATH}:${HOME}/.local/bin/"
 export EDITOR=nvim
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _AWT_TOOLKIT=MToolkit
 
 #xwallpaper --stretch ~/Photos/Backgrounds/$(ls ~/Photos/Backgrounds/ | sort -R | tail -1) &
 xwallpaper --stretch ~/Photos/Backgrounds/pit.png &

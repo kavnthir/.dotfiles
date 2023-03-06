@@ -33,7 +33,7 @@ export KEYTIMEOUT=1
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'l' vi-forward-char 
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
@@ -62,5 +62,8 @@ source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.
 
 export QSYS_ROOTDIR="/home/kavnthir/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
 export PATH=$PATH:/usr/bin/pytesseract
-source /usr/share/nvm/init-nvm.sh
-source /usr/share/nvm/init-nvm.sh
+
+export NVM_DIR=~/.nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+alias node='unalias node ; unalias npm ; nvm use default ; node $@'
+alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
