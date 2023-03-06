@@ -32,6 +32,7 @@
   "initializationOptions": {
     "index": {"onChange": true},
     "highlight": { "lsRanges" : true },
-    "clangd.semanticHighlighting": true
+    "clangd.semanticHighlighting": true,
+	"suggest.noselect" : true
   }
 }

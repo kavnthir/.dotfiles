@@ -18,6 +18,7 @@ export EDITOR=nvim
 
 #xwallpaper --stretch ~/Photos/Backgrounds/$(ls ~/Photos/Backgrounds/ | sort -R | tail -1) &
 xwallpaper --stretch ~/Photos/Backgrounds/pit.png &
+redshift-gtk -l 37:-78 &
 xmousepasteblock &
 xcompmgr &
 xbindkeys &

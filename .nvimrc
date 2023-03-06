@@ -9,6 +9,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 	Plug 'rstacruz/vim-closer'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'andweeb/presence.nvim'
 	Plug 'github/copilot.vim'
 
 call plug#end()
@@ -70,5 +71,17 @@ autocmd BufRead,BufNewFile *.txx setlocal filetype=cpp
 "--------------------- 
 
 let g:airline#extensions#tabline#enabled = 1
+
+"---------------------
+" Presence
+"--------------------- 
+
+let g:presence_neovim_image_text = "a text editor"
+
+"-------------------
+" Copilot Node.js Version
+"-------------------
+
+let g:copilot_node_command = "~/.nvm/versions/node/v16.15.0/bin/node"
 
 source ~/.dotfiles/.cocrc
